@@ -1,0 +1,154 @@
+.reviews__wrapper {
+  width: @mobile-width;
+  padding: 20px 20px 19px;
+  margin: 0 auto;
+}
+
+.reviews__item {
+  margin: 0 0 35px;
+  text-align: center;
+}
+
+.reviews__autor {
+  .font(18px, 30px, 700,  #000000);
+  font-style: normal;
+}
+
+.reviews__autor span {
+  display: none;
+}
+
+.reviews__text {
+  margin: 11px 0 0;
+  line-height: 30px;
+}
+
+.reviews__wrapper label {
+  position: relative;
+  top: 276px;
+  left: 108px;
+
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+
+  font-size: 0;
+  text-align: center;
+  vertical-align: baseline;
+
+  background-color: @dark-ashen;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:not(:last-of-type) {
+    margin-right: 10px;
+  }
+}
+
+.reviews__radio {
+  &:hover + label {
+    background-color: @dark;
+  }
+
+  &:active + label {
+    opacity: 10%;
+  }
+
+  &:checked + label {
+    width: 12px;
+    height: 12px;
+
+    background-color: #ffffff;
+    border: 3px solid @dark;
+  }
+
+  &:focus + label {
+    outline: 2px solid rgba(46, 136, 228, 0.52);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__wrapper {
+    width: @tablet-width;
+    padding: 8px 20px 15px;
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__text {
+    font-size: 18px;
+    line-height: 30px;
+    order: -1;
+  }
+
+  .reviews__autor {
+    margin-top: 35px;
+    font-size: 20px;
+  }
+
+  .reviews__autor span {
+    display: block;
+    .font(14px, 30px);
+    margin-top: 2px;
+  }
+
+  .reviews__wrapper label {
+    top: 253px;
+    left: 278px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__wrapper {
+    position: relative;
+
+    width: @desktop-width;
+    padding: 176px 85px 0;
+
+    background: url("../img/quotes-icon.svg") no-repeat center 19%;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 213px;
+      width: 22px;
+      height: 41px;
+    }
+
+    &::before {
+      left: 9px;
+      background-image: url("../img/review-arrow-left-icon.svg");
+    }
+
+    &::after {
+      right: 9px;
+      background-image: url("../img/review-arrow-right-icon.svg");
+    }
+  }
+
+  .reviews__item {
+    margin: 0;
+  }
+
+  .reviews__text {
+    margin-bottom: 2px;
+  }
+
+  .reviews__autor {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  .reviews__autor span {
+    font-size: 18px;
+  }
+
+  .reviews__wrapper label {
+    display: none;
+  }
+}

@@ -1,0 +1,247 @@
+.contacts {
+  background: url("../img/bg-map-mobile@1x.png") no-repeat center bottom;
+  background-size: 100%;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+  }
+}
+
+.contacts__wrapper {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.contacts__title {
+  display: block;
+  width: @mobile-width;
+  padding-top: 42px;
+  margin: 0 auto 25px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.contacts__content {
+  position: relative;
+  width: @mobile-width;
+  margin: 0 auto;
+  padding: 0 20px 25px;
+  display: flex;
+  flex-direction: column;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -143px;
+    left: 141px;
+
+    width: 36px;
+    height: 36px;
+
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -134px;
+    left: 151px;
+
+    width: 17px;
+    height: 17px;
+
+    background-color: @pink;
+    border-radius: 50%;
+  }
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0 13px;
+
+  &--address {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__item span {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.contacts__item a {
+  .font(24px, 30px, 400, @pink);
+  text-decoration: none;
+
+  &:hover {
+    color: @dark;
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 30%;
+    text-decoration: none;
+  }
+}
+
+.contacts__map {
+  position: relative;
+  width: 100%;
+  height: 219px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+
+    width: 50%;
+    height: 56px;
+  }
+
+  &::before {
+    left: 0;
+    background-image: linear-gradient(10deg, transparent 50%, #ffffff 50%);
+  }
+
+  &::after {
+    right: 0;
+    background-image: linear-gradient(-10deg, transparent 50%, #ffffff 50%);
+  }
+}
+
+.contacts__iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+    }
+  }
+
+  .contacts__title {
+    width: @tablet-width;
+    padding: 45px 31px 0;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 35px;
+  }
+
+  .contacts__content {
+    width: @tablet-width;
+    padding: 0 67px 21px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &::before {
+      bottom: -235px;
+      left: 311px;
+    }
+
+    &::after {
+      bottom: -226px;
+      left: 320px;
+    }
+  }
+
+  .contacts__item {
+    margin-bottom: 45px;
+
+    &--address {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+  .contacts__map {
+    height: 379px;
+
+    &::before {
+      height: 85px;
+      background-image: linear-gradient(12deg, transparent 50%, #ffffff 50%);
+    }
+
+    &::after {
+      height: 85px;
+      background-image: linear-gradient(-12deg, transparent 50%, #ffffff 50%);
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+    }
+  }
+
+  .contacts__title {
+    margin-bottom: 57px;
+    padding: 65px 0 0;
+    font-size: 50px;
+    line-height: 57px;
+  }
+
+  .contacts__content {
+    width: @desktop-width;
+    padding: 0 23px 21px;
+
+    &::before {
+      bottom: -300px;
+      left: 462px;
+    }
+
+    &::after {
+      bottom: -291px;
+      left: 471px;
+    }
+  }
+
+  .contacts__item {
+    width: 30%;
+    margin: 0;
+
+    &--tel {
+      order: 0;
+    }
+
+    &--mail {
+      order: 2;
+    }
+
+    &--address {
+      margin: 0;
+      order: 1;
+    }
+  }
+
+  .contacts__item span {
+    margin-bottom: 19px;
+  }
+
+  .contacts__map {
+    height: 503px;
+
+    &::before {
+      height: 110px;
+      background-image: linear-gradient(10deg, transparent 50%, #ffffff 50%);
+    }
+
+    &::after {
+      height: 106px;
+      background-image: linear-gradient(-10deg, transparent 50%, #ffffff 50%);
+    }
+  }
+}
