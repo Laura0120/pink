@@ -16,11 +16,7 @@
     <header class="page-header page-header--opened">
       <div class="page-header__wrapper">
         <div class="page-header__content">
-          <a
-            href="index.html"
-            aria-label="Пинк"
-            class="page-header__logo-wrapper"
-          >
+          <a class="page-header__logo-wrapper">
             <svg
               class="page-header__logo page-header__logo--mobile"
               width="75"
@@ -85,10 +81,10 @@
       </div>
     </header>
     <main class="page-main">
-      <div class="page-main__wrapper">
-        <section class="page-main__intro intro">
-          <div class="intro__wrapper">
-            <h1 class="intro__title">
+      <div class="page-main__wrapper page-main__wrapper--index">
+        <section class="page-main__intro intro intro--index">
+          <div class="intro__wrapper intro__wrapper--index">
+            <h1 class="intro__title intro__title--index">
               Взгляните на жизнь иначе!
             </h1>
 
@@ -215,6 +211,14 @@
               будущей женой в комментариях к выложенной фотографии!»
             </p>
           </blockquote>
+          <button
+            class="reviews__toggle reviews__toggle--left"
+            aria-label="предыдущий отзыв"
+          ></button>
+          <button
+            class="reviews__toggle reviews__toggle--right"
+            aria-label="следующий отзыв"
+          ></button>
         </div>
       </section>
       <section class="page-main__offer offer">

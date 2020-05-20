@@ -15,328 +15,608 @@
 
     <header class="page-header page-header--opened">
       <div class="page-header__wrapper">
-        <a
-          href="index.html"
-          aria-label="Пинк"
-          class="page-header__logo-wrapper"
-        >
-          <svg
-            class="page-header__logo page-header__logo--mobile"
-            width="75"
-            height="22"
+        <div class="page-header__content">
+          <a
+            href="index.html"
+            aria-label="Пинк главная"
+            class="page-header__logo-wrapper"
           >
-            <use xlink:href="#icon-logo-pink-mobile"></use>
-          </svg>
-          <svg
-            class="page-header__logo page-header__logo--tablet"
-            width="147"
-            height="40"
-          >
-            <use xlink:href="#icon-logo-pink-tablet"></use>
-          </svg>
-          <svg
-            class="page-header__logo page-header__logo--desktop"
-            width="147"
-            height="40"
-          >
-            <use xlink:href="#icon-logo-pink-desktop"></use>
-          </svg>
-          <svg
-            class="page-header__logo page-header__logo--stars"
-            width="147"
-            height="40"
-          >
-            <use xlink:href="#icon-logo-pink-stars"></use>
-          </svg>
-        </a>
-      </div>
-      <nav class="page-header__nav main-nav main-nav--opened main-nav--nojs">
-        <div class="main-nav__wrapper">
-          <button
-            type="button"
-            class="main-nav__toggle"
-            aria-label="Открыть / закрыть меню"
-          ></button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a>
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="photo.html" aria-label="Перейти к фотографиям">
-                Фотографии
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">
-                Конкурс
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#">
-                HTML Academy
-              </a>
-            </li>
-          </ul>
+            <svg
+              class="page-header__logo page-header__logo--mobile"
+              width="75"
+              height="22"
+            >
+              <use xlink:href="#icon-logo-pink-mobile"></use>
+            </svg>
+            <svg
+              class="page-header__logo page-header__logo--tablet"
+              width="147"
+              height="40"
+            >
+              <use xlink:href="#icon-logo-pink-tablet"></use>
+            </svg>
+            <svg
+              class="page-header__logo page-header__logo--desktop"
+              width="147"
+              height="40"
+            >
+              <use xlink:href="#icon-logo-pink-desktop"></use>
+            </svg>
+            <svg
+              class="page-header__logo page-header__logo--stars"
+              width="147"
+              height="40"
+            >
+              <use xlink:href="#icon-logo-pink-stars"></use>
+            </svg>
+          </a>
         </div>
-      </nav>
+        <nav class="page-header__nav main-nav main-nav--opened main-nav--nojs">
+          <div class="main-nav__wrapper">
+            <button
+              type="button"
+              class="main-nav__toggle"
+              aria-label="Открыть / закрыть меню"
+            ></button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="index.html" aria-label="Перейти на главную">
+                  Главная
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a>
+                  Фотографии
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="form.html">
+                  Конкурс
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">
+                  HTML Academy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
-      <div class="page-main__wrapper">
+      <div class="page-main__wrapper page-main__wrapper--photo">
         <section class="page-main__intro intro">
-          <div class="intro__wrapper">
-            <h1 class="title title--h1">Взгляните на жизнь иначе!</h1>
-
-            <div class="intro__commercial commercial">
-              <a
-                href="https://www.apple.com/ru/ios/app-store/"
-                aria-label="перейти в App Store"
-                class="commercial__button button"
-                >Скачать приложение</a
-              >
-              <ul class="commercial__market-list">
-                <li class="commercial__market-item">
-                  <a
-                    href="https://www.apple.com/ru/ios/app-store/"
-                    aria-label="перейти в App Store"
-                  >
-                    <svg class="commercial__icon" width="47" height="56">
-                      <use xlink:href="#icon-logo-apple"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="commercial__market-item">
-                  <a
-                    href="https://play.google.com/store/apps?hl=ru"
-                    aria-label="перейти в Play маркет"
-                  >
-                    <svg class="commercial__icon" width="43" height="47">
-                      <use xlink:href="#icon-logo-android"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="commercial__market-item">
-                  <a
-                    href="https://www.microsoft.com/ru-ru/store/apps/windows"
-                    aria-label="перейти в Windows Store"
-                  >
-                    <svg class="commercial__icon" width="44" height="41">
-                      <use xlink:href="#icon-logo-microsoft"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-              <p class="commercial__description">
-                Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows
-                8
-              </p>
-            </div>
+          <div class="intro__wrapper intro__wrapper--photo">
+            <h1 class="intro__title">Фотографии пользователей</h1>
           </div>
         </section>
       </div>
-      <section class="page-main__advantages advantages">
-        <div class="advantages__wrapper">
-          <h2 class="visually-hidden">Наши преимущества</h2>
-          <p class="advantages__title">Устали от серости мегаполиса?</p>
-          <p class="advantages__title">Нам есть, что вам предложить!</p>
-          <ul class="advantages__list">
-            <li class="advantages__item advantages__item--mood">
-              <h3>Поднимает настроение</h3>
-              <p>
-                Приложение позволит вам победить осеннюю хандру и депрессию
-                буквально в несколько кликов!
+      <div class="page-main__photo photo">
+        <p class="photo__welcome">
+          Взгляните на фотографии, которые выкладывают пользователи! Видите, как
+          не хватает ваших?
+        </p>
+        <div class="photo__item photo-item photo-item--panorama">
+          <a
+            href="#"
+            aria-label="Перейти на полноразмерный вариант"
+            class="photo-item__image photo-item__image--panorama"
+          >
+            <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 960px)"
+                srcset="
+                  img/panorama-desktop@1x.webp 1x,
+                  img/panorama-desktop@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 660px)"
+                srcset="
+                  img/panorama-tablet@1x.webp 1x,
+                  img/panorama-tablet@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  img/panorama-mobile@1x.webp 1x,
+                  img/panorama-mobile@2x.webp 2x
+                "
+              />
+              <source
+                media="(min-width: 960px)"
+                srcset="
+                  img/panorama-desktop@1x.jpg 1x,
+                  img/panorama-desktop@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 660px)"
+                srcset="
+                  img/panorama-tablet@1x.jpg 1x,
+                  img/panorama-tablet@2x.jpg 2x
+                "
+              />
+              <img
+                src="img/panorama-mobile@1x.jpg"
+                srcset="img/panorama-mobile@2x.jpg"
+                width="320"
+                height="137"
+                alt="Панорма дня"
+              />
+            </picture>
+          </a>
+          <div class="photo-item__wrapper photo-item__wrapper--panorama">
+            <blockquote
+              class="photo-item__description photo-item__description--panorama"
+            >
+              <cite class="photo-item__autor">
+                Анна
+                <span>(5 минут назад)</span>
+              </cite>
+              <p class="photo-item__text">
+                Прыгать или нет? Напишите в комментарии свой совет и смотрите
+                прямую трансляцию в перископе, задавайте свои вопросы!
               </p>
-            </li>
-            <li class="advantages__item advantages__item--world">
-              <h3>Меняет мир вокруг</h3>
-              <p>
-                Сделайте снимок и украсьте его смайликом или текстовой подписью,
-                чтобы усилить эффект
-              </p>
-            </li>
-            <li class="advantages__item advantages__item--friends">
-              <h3>Заводит новых друзей</h3>
-              <p>
-                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
-                заводите новых
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <article class="page-main__preview preview">
-        <div class="preview__wrapper">
-          <h2>Эффект на 24 часа!</h2>
-          <p>
-            Британские ученые провели исследования и доказали, что положительный
-            эффект от использования приложения длится целые сутки!
-          </p>
-          <a href="#">Узнать больше об исследовании</a>
-        </div>
-      </article>
-      <section class="page-main__reviews reviews">
-        <div class="reviews__wrapper">
-          <h2 class="visually-hidden">Отзывы</h2>
-          <input
-            class="visually-hidden reviews__radio reviews__radio--1"
-            type="radio"
-            id="reviews-1"
-            name="reviews-toggle"
-            checked
-          />
-          <label for="reviews-1">Первый отзыв</label>
-          <input
-            class="visually-hidden reviews__radio reviews__radio--2"
-            type="radio"
-            id="reviews-2"
-            name="reviews-toggle"
-          />
-          <label for="reviews-2">Второй отзыв</label>
-          <input
-            class="visually-hidden reviews__radio reviews__radio--3"
-            type="radio"
-            id="reviews-3"
-            name="reviews-toggle"
-          />
-          <label for="reviews-3">Третий отзыв</label>
-          <blockquote class="reviews__item">
-            <cite class="reviews__autor">
-              Николай Петров
-              <span>25 лет, водитель трамвая</span>
-            </cite>
-            <p class="reviews__text">
-              «Это приложение перевернуло мой мир и позволило по-новому
-              взглянуть на привычные серые вещи! А еще я познакомился со своей
-              будущей женой в комментариях к выложенной фотографии!»
-            </p>
-          </blockquote>
-        </div>
-      </section>
-      <section class="page-main__offer offer">
-        <div class="offer__wrapper">
-          <h2 class="visually-hidden">Тарифы</h2>
-          <input
-            class="visually-hidden offer__radio offer__radio--1"
-            type="radio"
-            id="offer-1"
-            name="offer-toggle"
-          />
-          <label for="offer-1">База</label>
-          <input
-            class="visually-hidden offer__radio offer__radio--2"
-            type="radio"
-            id="offer-2"
-            name="offer-toggle"
-            checked
-          /><label for="offer-2">Стандарт</label>
-          <input
-            class="visually-hidden offer__radio offer__radio--3"
-            type="radio"
-            id="offer-3"
-            name="offer-toggle"
-          />
-          <label for="offer-3">Анлим</label>
-          <table class="offer__content">
-            <tr>
-              <th class="offer__title"></th>
-              <th class="offer__title">База<br /><span>1,99 USD</span></th>
-              <th class="offer__title">Стандарт<br /><span>3,99 USD</span></th>
-              <th class="offer__title">Анлим<br /><span>9,99 USD</span></th>
-            </tr>
-            <tr>
-              <td class="offer__feature">Розовый фильтр</td>
-              <td class="offer__value">
-                <span>Розовый фильтр</span
-                ><svg class="offer__icon-yes" width="31" height="21">
-                  <use xlink:href="#icon-yes"></use>
+            </blockquote>
+            <div class="photo-item__like photo-item__like--panorama">
+              <button type="button" class="photo-item__button-like">
+                <svg class="photo-item__like-icon" width="13" height="12">
+                  <use xlink:href="#icon-heart"></use>
                 </svg>
-              </td>
-              <td class="offer__value">
-                <span>Розовый фильтр</span
-                ><svg class="offer__icon-yes" width="31" height="21">
-                  <use xlink:href="#icon-yes"></use>
-                </svg>
-              </td>
-              <td class="offer__value">
-                <span>Розовый фильтр</span
-                ><svg class="offer__icon-yes" width="31" height="21">
-                  <use xlink:href="#icon-yes"></use>
-                </svg>
-              </td>
-            </tr>
-            <tr>
-              <td class="offer__feature"><span>Смайлики</span></td>
-              <td class="offer__value">
-                <span>Смайлики</span
-                ><svg class="offer__icon-no" width="27" height="26">
-                  <use xlink:href="#icon-no"></use>
-                </svg>
-              </td>
-              <td class="offer__value">
-                <span>Смайлики</span
-                ><svg class="offer__icon-yes" width="31" height="21">
-                  <use xlink:href="#icon-yes"></use>
-                </svg>
-              </td>
-              <td class="offer__value">
-                <span>Смайлики</span
-                ><svg class="offer__icon-yes" width="31" height="21">
-                  <use xlink:href="#icon-yes"></use>
-                </svg>
-              </td>
-            </tr>
-            <tr>
-              <td class="offer__feature"><span>Комментарии</span></td>
-              <td class="offer__value">
-                <span>Комментарии</span
-                ><svg class="offer__icon-no" width="27" height="26">
-                  <use xlink:href="#icon-no"></use>
-                </svg>
-              </td>
-              <td class="offer__value">
-                <span>Комментарии</span
-                ><svg class="offer__icon-no" width="27" height="26">
-                  <use xlink:href="#icon-no"></use>
-                </svg>
-              </td>
-              <td class="offer__value">
-                <span>Комментарии</span
-                ><svg class="offer__icon-yes" width="31" height="21">
-                  <use xlink:href="#icon-yes"></use>
-                </svg>
-              </td>
-            </tr>
-          </table>
-        </div>
-      </section>
-      <section class="page-main__contacts contacts">
-        <div class="contacts__wrapper">
-          <h2 class="visually-hidden">Наши контакты</h2>
-          <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
-          <div class="contacts__content">
-            <div class="contacts__item">
-              <span>Звоните:</span>
-              <a href="tel:+7 (812) 555-66-66">+7 (812) 555-66-66</a>
-            </div>
-            <div class="contacts__item">
-              <span>Пишите:</span>
-              <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </div>
-            <div class="contacts__item contacts__item--address">
-              <span>Приезжайте в гости:</span>
-              <a href="#">ул. Большая Конюшенная, 19/8</a>
+              </button>
+              <p>Нравится: 215</p>
             </div>
           </div>
         </div>
-        <div class="contacts__map">
-          <!-- <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716006118!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1589047544400!5m2!1sru!2sru"
-            aria-label="мы на карте"
-            class="contacts__iframe"
-          ></iframe> -->
-        </div>
-      </section>
+        <ul class="photo__list">
+          <li class="photo__item photo-item">
+            <a
+              href="#"
+              aria-label="Перейти на полноразмерный вариант"
+              class="photo-item__image"
+            >
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 960px)"
+                  srcset="
+                    img/photo-car-desktop@1x.webp 1x,
+                    img/photo-car-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 660px)"
+                  srcset="
+                    img/photo-car-tablet@1x.webp 1x,
+                    img/photo-car-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/photo-car-mobile@1x.webp 1x,
+                    img/photo-car-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 960px)"
+                  srcset="
+                    img/photo-car-desktop@1x.jpg 1x,
+                    img/photo-car-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 660px)"
+                  srcset="
+                    img/photo-car-tablet@1x.jpg 1x,
+                    img/photo-car-tablet@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="img/photo-car-mobile@1x.jpg"
+                  srcset="img/photo-car-mobile@2x.jpg"
+                  width="280"
+                  height="180"
+                  alt="Машина"
+                />
+              </picture>
+            </a>
+            <div class="photo-item__wrapper">
+              <blockquote class="photo-item__description">
+                <cite class="photo-item__autor">
+                  Левон
+                  <span>(5 часов назад)</span>
+                </cite>
+                <p class="photo-item__text">
+                  Вчера он на луну летал, сегодня в руки к нам попал.
+                </p>
+              </blockquote>
+              <div class="photo-item__like">
+                <button type="button" class="photo-item__button-like">
+                  <svg class="photo-item__like-icon" width="13" height="12">
+                    <use xlink:href="#icon-heart"></use>
+                  </svg>
+                </button>
+                <p>Нравится: 356</p>
+              </div>
+            </div>
+          </li>
+          <li class="photo__item photo-item">
+            <a
+              href="#"
+              aria-label="Перейти на полноразмерный вариант"
+              class="photo-item__image"
+            >
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 960px)"
+                  srcset="
+                    img/photo-drumset-desktop@1x.webp 1x,
+                    img/photo-drumset-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 660px)"
+                  srcset="
+                    img/photo-drumset-tablet@1x.webp 1x,
+                    img/photo-drumset-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/photo-drumset-mobile@1x.webp 1x,
+                    img/photo-drumset-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 960px)"
+                  srcset="
+                    img/photo-drumset-desktop@1x.jpg 1x,
+                    img/photo-drumset-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 660px)"
+                  srcset="
+                    img/photo-drumset-tablet@1x.jpg 1x,
+                    img/photo-drumset-tablet@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="img/photo-drumset-mobile@1x.jpg"
+                  srcset="img/photo-drumset-mobile@2x.jpg"
+                  width="280"
+                  height="180"
+                  alt="Ударная установка"
+                />
+              </picture>
+            </a>
+            <div class="photo-item__wrapper">
+              <blockquote class="photo-item__description">
+                <cite class="photo-item__autor">
+                  Антон
+                  <span>(12 часов назад)</span>
+                </cite>
+                <p class="photo-item__text">
+                  Соседи будут рады!
+                </p>
+              </blockquote>
+              <div class="photo-item__like">
+                <button type="button" class="photo-item__button-like">
+                  <svg class="photo-item__like-icon" width="13" height="12">
+                    <use xlink:href="#icon-heart"></use>
+                  </svg>
+                </button>
+                <p>Нравится: 666</p>
+              </div>
+            </div>
+          </li>
+          <li class="photo__item photo-item">
+            <a
+              href="#"
+              aria-label="Перейти на полноразмерный вариант"
+              class="photo-item__image"
+            >
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 960px)"
+                  srcset="
+                    img/photo-window-desktop@1x.webp 1x,
+                    img/photo-window-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 660px)"
+                  srcset="
+                    img/photo-window-tablet@1x.webp 1x,
+                    img/photo-window-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/photo-window-mobile@1x.webp 1x,
+                    img/photo-window-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 960px)"
+                  srcset="
+                    img/photo-window-desktop@1x.jpg 1x,
+                    img/photo-window-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 660px)"
+                  srcset="
+                    img/photo-window-tablet@1x.jpg 1x,
+                    img/photo-window-tablet@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="img/photo-window-mobile@1x.jpg"
+                  srcset="img/photo-window-mobile@2x.jpg"
+                  width="280"
+                  height="180"
+                  alt="Окно с видом в облока"
+                />
+              </picture>
+            </a>
+            <div class="photo-item__wrapper">
+              <blockquote class="photo-item__description">
+                <cite class="photo-item__autor">
+                  Борис
+                  <span>(20 часов назад)</span>
+                </cite>
+                <p class="photo-item__text">
+                  Здесь могла быть ваша цитата о высоком и вечном.
+                </p>
+              </blockquote>
+              <div class="photo-item__like">
+                <button type="button" class="photo-item__button-like">
+                  <svg class="photo-item__like-icon" width="13" height="12">
+                    <use xlink:href="#icon-heart"></use>
+                  </svg>
+                </button>
+                <p>Нравится: 215</p>
+              </div>
+            </div>
+          </li>
+          <li class="photo__item photo-item">
+            <a
+              href="#"
+              aria-label="Перейти на полноразмерный вариант"
+              class="photo-item__image"
+            >
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 960px)"
+                  srcset="
+                    img/photo-fair-desktop@1x.webp 1x,
+                    img/photo-fair-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 660px)"
+                  srcset="
+                    img/photo-fair-tablet@1x.webp 1x,
+                    img/photo-fair-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/photo-fair-mobile@1x.webp 1x,
+                    img/photo-fair-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 960px)"
+                  srcset="
+                    img/photo-fair-desktop@1x.jpg 1x,
+                    img/photo-fair-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 660px)"
+                  srcset="
+                    img/photo-fair-tablet@1x.jpg 1x,
+                    img/photo-fair-tablet@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="img/photo-fair-mobile@1x.jpg"
+                  srcset="img/photo-fair-mobile@2x.jpg"
+                  width="280"
+                  height="180"
+                  alt="Ярмарка кубанская бахча"
+                />
+              </picture>
+            </a>
+            <div class="photo-item__wrapper">
+              <blockquote class="photo-item__description">
+                <cite class="photo-item__autor">
+                  Сергей
+                  <span>(25 часов назад)</span>
+                </cite>
+                <p class="photo-item__text">
+                  Самая кубанская в мире!
+                </p>
+              </blockquote>
+              <div class="photo-item__like">
+                <button type="button" class="photo-item__button-like">
+                  <svg class="photo-item__like-icon" width="13" height="12">
+                    <use xlink:href="#icon-heart"></use>
+                  </svg>
+                </button>
+                <p>Нравится: 4</p>
+              </div>
+            </div>
+          </li>
+          <li class="photo__item photo-item">
+            <a
+              href="#"
+              aria-label="Перейти на полноразмерный вариант"
+              class="photo-item__image"
+            >
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 960px)"
+                  srcset="
+                    img/photo-pov-desktop@1x.webp 1x,
+                    img/photo-pov-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 660px)"
+                  srcset="
+                    img/photo-pov-tablet@1x.webp 1x,
+                    img/photo-pov-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/photo-pov-mobile@1x.webp 1x,
+                    img/photo-pov-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 960px)"
+                  srcset="
+                    img/photo-pov-desktop@1x.jpg 1x,
+                    img/photo-pov-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 660px)"
+                  srcset="
+                    img/photo-pov-tablet@1x.jpg 1x,
+                    img/photo-pov-tablet@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="img/photo-pov-mobile@1x.jpg"
+                  srcset="img/photo-pov-mobile@2x.jpg"
+                  width="280"
+                  height="180"
+                  alt="Горная местность поздней осенью"
+                />
+              </picture>
+            </a>
+            <div class="photo-item__wrapper">
+              <blockquote class="photo-item__description">
+                <cite class="photo-item__autor">
+                  Максим
+                  <span>(40 часов назад)</span>
+                </cite>
+                <p class="photo-item__text">
+                  Где снег-то?
+                </p>
+              </blockquote>
+              <div class="photo-item__like">
+                <button type="button" class="photo-item__button-like">
+                  <svg class="photo-item__like-icon" width="13" height="12">
+                    <use xlink:href="#icon-heart"></use>
+                  </svg>
+                </button>
+                <p>Нравится: 150</p>
+              </div>
+            </div>
+          </li>
+          <li class="photo__item photo-item">
+            <a
+              href="#"
+              aria-label="Перейти на полноразмерный вариант"
+              class="photo-item__image"
+            >
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 960px)"
+                  srcset="
+                    img/photo-wing-desktop@1x.webp 1x,
+                    img/photo-wing-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 660px)"
+                  srcset="
+                    img/photo-wing-tablet@1x.webp 1x,
+                    img/photo-wing-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/photo-wing-mobile@1x.webp 1x,
+                    img/photo-wing-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 960px)"
+                  srcset="
+                    img/photo-wing-desktop@1x.jpg 1x,
+                    img/photo-wing-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 660px)"
+                  srcset="
+                    img/photo-wing-tablet@1x.jpg 1x,
+                    img/photo-wing-tablet@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="img/photo-wing-mobile@1x.jpg"
+                  srcset="img/photo-wing-mobile@2x.jpg"
+                  width="280"
+                  height="180"
+                  alt="вид на рассев из иллюминатора"
+                />
+              </picture>
+            </a>
+            <div class="photo-item__wrapper">
+              <blockquote class="photo-item__description">
+                <cite class="photo-item__autor">
+                  Надежда
+                  <span>(45 часов назад)</span>
+                </cite>
+                <p class="photo-item__text">
+                  Всем GM и взаимные лайки!
+                </p>
+              </blockquote>
+              <div class="photo-item__like">
+                <button type="button" class="photo-item__button-like">
+                  <svg class="photo-item__like-icon" width="13" height="12">
+                    <use xlink:href="#icon-heart"></use>
+                  </svg>
+                </button>
+                <p>Нравится: 2560</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <p class="photo__welcome photo__welcome--bottom">
+          Затмите их всех! <br />Выкладывайте все, что накопилось в телефоне!
+        </p>
+      </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
