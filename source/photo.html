@@ -64,18 +64,21 @@
                   Главная
                 </a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--active">
                 <a>
                   Фотографии
                 </a>
               </li>
               <li class="main-nav__item">
-                <a href="form.html">
+                <a href="form.html" aria-label="Перейти к форме">
                   Конкурс
                 </a>
               </li>
               <li class="main-nav__item">
-                <a href="#">
+                <a
+                  href="https://htmlacademy.ru/intensive/adaptive"
+                  aria-label="Перейти к HTML Academy"
+                >
                   HTML Academy
                 </a>
               </li>
@@ -154,7 +157,7 @@
             <blockquote
               class="photo-item__description photo-item__description--panorama"
             >
-              <cite class="photo-item__autor">
+              <cite class="photo-item__author">
                 Анна
                 <span>(5 минут назад)</span>
               </cite>
@@ -229,7 +232,7 @@
             </a>
             <div class="photo-item__wrapper">
               <blockquote class="photo-item__description">
-                <cite class="photo-item__autor">
+                <cite class="photo-item__author">
                   Левон
                   <span>(5 часов назад)</span>
                 </cite>
@@ -302,7 +305,7 @@
             </a>
             <div class="photo-item__wrapper">
               <blockquote class="photo-item__description">
-                <cite class="photo-item__autor">
+                <cite class="photo-item__author">
                   Антон
                   <span>(12 часов назад)</span>
                 </cite>
@@ -375,7 +378,7 @@
             </a>
             <div class="photo-item__wrapper">
               <blockquote class="photo-item__description">
-                <cite class="photo-item__autor">
+                <cite class="photo-item__author">
                   Борис
                   <span>(20 часов назад)</span>
                 </cite>
@@ -448,7 +451,7 @@
             </a>
             <div class="photo-item__wrapper">
               <blockquote class="photo-item__description">
-                <cite class="photo-item__autor">
+                <cite class="photo-item__author">
                   Сергей
                   <span>(25 часов назад)</span>
                 </cite>
@@ -521,7 +524,7 @@
             </a>
             <div class="photo-item__wrapper">
               <blockquote class="photo-item__description">
-                <cite class="photo-item__autor">
+                <cite class="photo-item__author">
                   Максим
                   <span>(40 часов назад)</span>
                 </cite>
@@ -594,7 +597,7 @@
             </a>
             <div class="photo-item__wrapper">
               <blockquote class="photo-item__description">
-                <cite class="photo-item__autor">
+                <cite class="photo-item__author">
                   Надежда
                   <span>(45 часов назад)</span>
                 </cite>
@@ -616,6 +619,144 @@
         <p class="photo__welcome photo__welcome--bottom">
           Затмите их всех! <br />Выкладывайте все, что накопилось в телефоне!
         </p>
+      </div>
+      <div class="page-main__editor editor">
+        <div class="editor__wrapper">
+          <a
+            href="#"
+            aria-label="Перейти на полноразмерный вариант"
+            class="editor__image"
+          >
+            <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 960px)"
+                srcset="
+                  img/photo-road-desktop@1x.webp 1x,
+                  img/photo-road-desktop@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 660px)"
+                srcset="
+                  img/photo-road-tablet@1x.webp 1x,
+                  img/photo-road-tablet@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  img/photo-road-mobile@1x.webp 1x,
+                  img/photo-road-mobile@2x.webp 2x
+                "
+              />
+              <source
+                media="(min-width: 960px)"
+                srcset="
+                  img/photo-road-desktop@1x.jpg 1x,
+                  img/photo-road-desktop@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 660px)"
+                srcset="
+                  img/photo-road-tablet@1x.jpg 1x,
+                  img/photo-road-tablet@2x.jpg 2x
+                "
+              />
+              <img
+                src="img/photo-road-mobile@1x.jpg"
+                srcset="img/photo-road-mobile@2x.jpg"
+                width="280"
+                height="374"
+                alt="вид на рассев из иллюминатора"
+              />
+            </picture>
+          </a>
+          <form action="/" method="post" class="editor__form">
+            <div class="editor__form-wrapper">
+              <div class="editor__item editor__item--crop">
+                <input
+                  type="checkbox"
+                  value="85"
+                  id="crop"
+                  checked
+                  class="editor__range editor__range--crop"
+                />
+                <label
+                  for="crop"
+                  aria-label="обрезать"
+                  class="editor__label editor__label--crop"
+                >
+                  <svg
+                    class="editor__icon editor__icon--crop"
+                    width="44"
+                    height="44"
+                  >
+                    <use xlink:href="#icon-editor-crop"></use>
+                  </svg>
+                </label>
+              </div>
+              <div class="editor__item editor__item--fill">
+                <input
+                  type="checkbox"
+                  value="10"
+                  id="fill"
+                  class="editor__range editor__range--fill"
+                />
+                <label
+                  for="fill"
+                  aria-label="применить заливку"
+                  class="editor__label"
+                >
+                  <svg
+                    class="editor__icon editor__icon--fill"
+                    width="50"
+                    height="43"
+                  >
+                    <use xlink:href="#icon-editor-fill"></use>
+                  </svg>
+                </label>
+              </div>
+              <div class="editor__item editor__item--contrast">
+                <input
+                  type="checkbox"
+                  value="50"
+                  id="contrast"
+                  class="editor__range editor__range--contrast"
+                />
+                <label
+                  for="contrast"
+                  aria-label="изменить контрастность"
+                  class="editor__label"
+                >
+                  <svg
+                    class="editor__icon editor__icon--contrast"
+                    width="32"
+                    height="32"
+                  >
+                    <use xlink:href="#icon-editor-contrast"></use>
+                  </svg>
+                </label>
+              </div>
+            </div>
+            <div class="editor__button-wrapper">
+              <button
+                type="submit"
+                class="editor__button editor__button--upload button"
+              >
+                Запостить
+              </button>
+              <button
+                type="reset"
+                class="editor__button editor__button--cansel button"
+              >
+                Отмена
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </main>
     <footer class="page-footer">

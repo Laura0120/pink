@@ -2,15 +2,16 @@
   position: relative;
 
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
 
   .list-reset();
 }
 
-.social__item:not(:last-child) {
-  margin-right: 13px;
+.social__item {
+  &:not(:last-child) {
+    margin-right: 13px;
+  }
 }
 
 .social__item a {

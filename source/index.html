@@ -55,7 +55,7 @@
               aria-label="Открыть / закрыть меню"
             ></button>
             <ul class="main-nav__list">
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--active">
                 <a>
                   Главная
                 </a>
@@ -66,12 +66,15 @@
                 </a>
               </li>
               <li class="main-nav__item">
-                <a href="form.html">
+                <a href="form.html" aria-label="Перейти к форме">
                   Конкурс
                 </a>
               </li>
               <li class="main-nav__item">
-                <a href="#">
+                <a
+                  href="https://htmlacademy.ru/intensive/adaptive"
+                  aria-label="Перейти к HTML Academy"
+                >
                   HTML Academy
                 </a>
               </li>
@@ -201,15 +204,15 @@
           />
           <label for="reviews-3">Третий отзыв</label>
           <blockquote class="reviews__item">
-            <cite class="reviews__autor">
+            <cite class="reviews__author">
               Николай Петров
               <span>25 лет, водитель трамвая</span>
             </cite>
-            <p class="reviews__text">
-              «Это приложение перевернуло мой мир и позволило по-новому
-              взглянуть на привычные серые вещи! А еще я познакомился со своей
-              будущей женой в комментариях к выложенной фотографии!»
-            </p>
+            <q class="reviews__text">
+              Это приложение перевернуло мой мир и позволило по-новому взглянуть
+              на привычные серые вещи! А еще я познакомился со своей будущей
+              женой в комментариях к выложенной фотографии!
+            </q>
           </blockquote>
           <button
             class="reviews__toggle reviews__toggle--left"
@@ -248,9 +251,9 @@
           <table class="offer__content">
             <tr>
               <th class="offer__title"></th>
-              <th class="offer__title">База<br /><span>1,99 USD</span></th>
-              <th class="offer__title">Стандарт<br /><span>3,99 USD</span></th>
-              <th class="offer__title">Анлим<br /><span>9,99 USD</span></th>
+              <th class="offer__title">База<span>1,99 USD</span></th>
+              <th class="offer__title">Стандарт<span>3,99 USD</span></th>
+              <th class="offer__title">Анлим<span>9,99 USD</span></th>
             </tr>
             <tr>
               <td class="offer__feature">Розовый фильтр</td>
@@ -323,11 +326,11 @@
           <h2 class="visually-hidden">Наши контакты</h2>
           <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
           <div class="contacts__content">
-            <div class="contacts__item">
+            <div class="contacts__item contacts__item--tel">
               <span>Звоните:</span>
-              <a href="tel:+7 (812) 555-66-66">+7 (812) 555-66-66</a>
+              <a href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
             </div>
-            <div class="contacts__item">
+            <div class="contacts__item contacts__item--mail">
               <span>Пишите:</span>
               <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </div>
@@ -338,21 +341,17 @@
           </div>
         </div>
         <div class="contacts__map">
-          <!-- <iframe
+          <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716006118!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1589047544400!5m2!1sru!2sru"
             aria-label="мы на карте"
             class="contacts__iframe"
-          ></iframe> -->
+          ></iframe>
         </div>
       </section>
     </main>
     <footer class="page-footer page-footer--index">
       <div class="page-footer__wrapper">
-        <a
-          href="index.html"
-          aria-label="Пинк"
-          class="page-footer__logo-wrapper"
-        >
+        <a class="page-footer__logo-wrapper">
           <svg
             width="146.3px"
             height="40.4px"

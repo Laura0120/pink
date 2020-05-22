@@ -5,6 +5,10 @@
 
   text-align: center;
   line-height: 30px;
+
+  &--bottom {
+    padding: 41px 34px 43px;
+  }
 }
 
 .photo__list {
@@ -25,7 +29,7 @@
     font-size: 18px;
 
     &--bottom {
-      padding-top: 64px;
+      padding: 64px 45px 69px;
     }
   }
 
@@ -33,7 +37,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: stretch;
+    // align-items: stretch;
     width: @tablet-width;
     padding: 28px 20px 0;
   }
@@ -45,12 +49,13 @@
     padding: 93px 170px 88px;
 
     &--bottom {
-      padding-top: 56px;
+      padding: 56px 170px 64px;
     }
   }
 
   .photo__list {
     width: @desktop-width;
+    justify-content: flex-start;
     padding: 0 11px;
   }
 }

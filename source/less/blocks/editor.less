@@ -1,0 +1,304 @@
+.editor__wrapper {
+  width: @mobile-width;
+  margin: 0 auto;
+  padding: 20px 22px 40px 18px;
+  background-color: @ash-color;
+}
+
+.editor__image {
+  display: block;
+  width: 280px;
+  margin-bottom: 20px;
+}
+
+.editor__item {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 75px;
+    right: -145px;
+    z-index: 3;
+
+    width: 15px;
+    height: 15px;
+    border: 2px solid @pink;
+    border-radius: 50%;
+    background-color: @ash-color;
+  }
+
+  &:active {
+    &::before {
+      background-color: @pink;
+    }
+  }
+
+  &--fill {
+    &::before {
+      display: none;
+    }
+  }
+
+  &--contrast {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.editor__image img {
+  display: block;
+}
+
+.editor__form-wrapper {
+  display: flex;
+  position: relative;
+  align-items: center;
+
+  margin-bottom: 38px;
+  padding: 23px 38px 68px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.editor__range {
+  position: absolute;
+  bottom: -33px;
+  left: -19px;
+
+  appearance: none;
+  width: 240px;
+  height: 2px;
+  background-color: @dark;
+  display: none;
+
+  &--crop {
+    display: block;
+  }
+}
+
+.editor__button {
+  width: 100%;
+  min-height: 55px;
+  cursor: pointer;
+
+  &--upload {
+    color: @pink;
+    border-color: @pink;
+    margin-bottom: 12px;
+
+    &:hover {
+      color: #ffffff;
+      background-color: @pink;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &--cansel {
+    opacity: 10%;
+    border-color: @dark;
+
+    &:hover {
+      opacity: 30%;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: @dark;
+    }
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .editor__item:not(:last-child) {
+    margin-right: 34px;
+  }
+
+  .editor__range {
+    &:hover + .editor__label svg {
+      opacity: 50%;
+    }
+
+    &:checked {
+      & + .editor__label svg {
+        opacity: 1;
+        fill: @pink;
+      }
+    }
+  }
+
+  .editor__icon {
+    opacity: 30%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .editor__wrapper {
+    width: @tablet-width;
+    display: flex;
+    justify-content: space-between;
+    padding: 41px 20px 54px;
+  }
+
+  .editor__image {
+    width: 300px;
+    margin: 15px 0 0;
+  }
+
+  .editor__form {
+    width: 50%;
+    padding-left: 25px;
+  }
+
+  .editor__form-wrapper {
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 65px;
+    border: none;
+  }
+
+  .editor__item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    width: 100%;
+    height: 72px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    &--crop {
+      &::before {
+        top: 29px;
+        right: 60px;
+      }
+    }
+
+    &--fill {
+      &::before {
+        display: block;
+        top: 29px;
+        right: 181px;
+      }
+    }
+
+    &--contrast {
+      &::before {
+        display: block;
+        top: 27px;
+        right: 109px;
+      }
+    }
+  }
+
+  .editor__range {
+    position: static;
+    display: block;
+    text-align: center;
+    width: 202px;
+    padding: 0 10px;
+  }
+
+  .editor__label {
+    width: 45px;
+    padding-top: 8px;
+    margin-right: 20px;
+    text-align: center;
+    order: -1;
+  }
+
+  .editor__icon {
+    fill: @pink;
+  }
+
+  .editor__button {
+    width: 260px;
+    margin: 0 auto;
+
+    &--upload {
+      margin-bottom: 25px;
+    }
+  }
+
+  @media (max-width: @not-desktop-width) {
+    .editor__icon {
+      &--crop {
+        width: 22px;
+        height: 22px;
+      }
+
+      &--fill {
+        width: 24px;
+        height: 22px;
+      }
+
+      &--contrast {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .editor {
+    width: @desktop-width;
+    margin: 0 auto;
+    padding: 0 10px 35px;
+  }
+
+  .editor__wrapper {
+    width: 100%;
+    padding: 41px 60px 56px 80px;
+  }
+
+  .editor__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 51%;
+    padding: 0;
+  }
+
+  .editor__range {
+    width: 288px;
+  }
+
+  .editor__item {
+    &--crop {
+      &::before {
+        right: 232px;
+      }
+    }
+
+    &--fill {
+      &::before {
+        right: 57px;
+      }
+    }
+
+    &--contrast {
+      &::before {
+        right: 144px;
+      }
+    }
+  }
+
+  .editor__label {
+    padding-top: 11px;
+    margin-right: 44px;
+  }
+
+  .editor__button-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .editor__button {
+    width: 183px;
+    margin: 0;
+  }
+}
