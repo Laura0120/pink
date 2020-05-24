@@ -1,0 +1,27 @@
+.button-form {
+  width: 100%;
+  min-height: 64px;
+
+  .font(18px, 30px, 700, #ffffff);
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: @grin;
+  border: none;
+  border-radius: 2px;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: @ash-light-color;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button-form {
+    width: 299px;
+    min-height: 64px;
+  }
+}

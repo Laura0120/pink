@@ -16,7 +16,11 @@
     <header class="page-header page-header--opened">
       <div class="page-header__wrapper">
         <div class="page-header__content">
-          <a class="page-header__logo-wrapper">
+          <a
+            href="index.html"
+            aria-label="Пинк главная"
+            class="page-header__logo-wrapper"
+          >
             <svg
               class="page-header__logo page-header__logo--mobile"
               width="75"
@@ -55,8 +59,8 @@
               aria-label="Открыть / закрыть меню"
             ></button>
             <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active">
-                <a>
+              <li class="main-nav__item">
+                <a href="index.html" aria-label="Перейти на главную">
                   Главная
                 </a>
               </li>
@@ -65,8 +69,8 @@
                   Фотографии
                 </a>
               </li>
-              <li class="main-nav__item">
-                <a href="form.html" aria-label="Перейти к форме">
+              <li class="main-nav__item main-nav__item--active">
+                <a>
                   Конкурс
                 </a>
               </li>
@@ -84,274 +88,261 @@
       </div>
     </header>
     <main class="page-main">
-      <div class="page-main__wrapper page-main__wrapper--index">
-        <section class="page-main__intro intro intro--index">
-          <div class="intro__wrapper intro__wrapper--index">
-            <h1 class="intro__title intro__title--index">
-              Взгляните на жизнь иначе!
+      <div class="page-main__wrapper">
+        <section class="page-main__intro intro">
+          <div class="intro__wrapper intro__wrapper--form">
+            <h1 class="intro__title intro__title--form">
+              Конкурс на самое безбашенное путешествие с Пинк
             </h1>
-
-            <div class="intro__commercial commercial">
-              <a
-                href="https://www.apple.com/ru/ios/app-store/"
-                aria-label="перейти в App Store"
-                class="commercial__button button"
-                >Скачать приложение</a
-              >
-              <ul class="commercial__market-list">
-                <li class="commercial__market-item">
-                  <a
-                    href="https://www.apple.com/ru/ios/app-store/"
-                    aria-label="перейти в App Store"
-                  >
-                    <svg class="commercial__icon" width="47" height="56">
-                      <use xlink:href="#icon-logo-apple"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="commercial__market-item">
-                  <a
-                    href="https://play.google.com/store/apps?hl=ru"
-                    aria-label="перейти в Play маркет"
-                  >
-                    <svg class="commercial__icon" width="43" height="47">
-                      <use xlink:href="#icon-logo-android"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="commercial__market-item">
-                  <a
-                    href="https://www.microsoft.com/ru-ru/store/apps/windows"
-                    aria-label="перейти в Windows Store"
-                  >
-                    <svg class="commercial__icon" width="44" height="41">
-                      <use xlink:href="#icon-logo-microsoft"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-              <p class="commercial__description">
-                Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows
-                8
-              </p>
-            </div>
           </div>
         </section>
       </div>
-      <section class="page-main__advantages advantages">
-        <div class="advantages__wrapper">
-          <h2 class="visually-hidden">Наши преимущества</h2>
-          <p class="advantages__title">Устали от серости мегаполиса?</p>
-          <p class="advantages__title">Нам есть, что вам предложить!</p>
-          <ul class="advantages__list">
-            <li class="advantages__item advantages__item--mood">
-              <h3>Поднимает настроение</h3>
-              <p>
-                Приложение позволит вам победить осеннюю хандру и депрессию
-                буквально в несколько кликов!
-              </p>
-            </li>
-            <li class="advantages__item advantages__item--world">
-              <h3>Меняет мир вокруг</h3>
-              <p>
-                Сделайте снимок и украсьте его смайликом или текстовой подписью,
-                чтобы усилить эффект
-              </p>
-            </li>
-            <li class="advantages__item advantages__item--friends">
-              <h3>Заводит новых друзей</h3>
-              <p>
-                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
-                заводите новых
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <article class="page-main__preview preview">
-        <div class="preview__wrapper">
-          <h2 class="preview__title">Эффект на 24 часа!</h2>
-          <p class="preview__text">
-            Британские ученые провели исследования и доказали, что положительный
-            эффект от использования приложения длится целые сутки!
-          </p>
-          <a href="#">Узнать больше об исследовании</a>
-        </div>
-      </article>
-      <section class="page-main__reviews reviews">
-        <div class="reviews__wrapper">
-          <h2 class="visually-hidden">Отзывы</h2>
-          <input
-            class="visually-hidden reviews__radio reviews__radio--1"
-            type="radio"
-            id="reviews-1"
-            name="reviews-toggle"
-            checked
-          />
-          <label for="reviews-1">Первый отзыв</label>
-          <input
-            class="visually-hidden reviews__radio reviews__radio--2"
-            type="radio"
-            id="reviews-2"
-            name="reviews-toggle"
-          />
-          <label for="reviews-2">Второй отзыв</label>
-          <input
-            class="visually-hidden reviews__radio reviews__radio--3"
-            type="radio"
-            id="reviews-3"
-            name="reviews-toggle"
-          />
-          <label for="reviews-3">Третий отзыв</label>
-          <blockquote class="reviews__item">
-            <cite class="reviews__author">
-              Николай Петров
-              <span>25 лет, водитель трамвая</span>
-            </cite>
-            <q class="reviews__text">
-              Это приложение перевернуло мой мир и позволило по-новому взглянуть
-              на привычные серые вещи! А еще я познакомился со своей будущей
-              женой в комментариях к выложенной фотографии!
-            </q>
-          </blockquote>
-          <button
-            class="reviews__toggle reviews__toggle--left"
-            aria-label="предыдущий отзыв"
-          ></button>
-          <button
-            class="reviews__toggle reviews__toggle--right"
-            aria-label="следующий отзыв"
-          ></button>
-        </div>
-      </section>
-      <section class="page-main__offer offer">
-        <div class="offer__wrapper">
-          <h2 class="visually-hidden">Тарифы</h2>
-          <input
-            class="visually-hidden offer__radio offer__radio--1"
-            type="radio"
-            id="offer-1"
-            name="offer-toggle"
-          />
-          <label for="offer-1">База</label>
-          <input
-            class="visually-hidden offer__radio offer__radio--2"
-            type="radio"
-            id="offer-2"
-            name="offer-toggle"
-            checked
-          /><label for="offer-2">Стандарт</label>
-          <input
-            class="visually-hidden offer__radio offer__radio--3"
-            type="radio"
-            id="offer-3"
-            name="offer-toggle"
-          />
-          <label for="offer-3">Анлим</label>
-          <table class="offer__content">
-            <tr>
-              <th class="offer__title"></th>
-              <th class="offer__title">База<span>1,99 USD</span></th>
-              <th class="offer__title">Стандарт<span>3,99 USD</span></th>
-              <th class="offer__title">Анлим<span>9,99 USD</span></th>
-            </tr>
-            <tr>
-              <td class="offer__feature">Розовый фильтр</td>
-              <td class="offer__value">
-                <span>Розовый фильтр</span
-                ><svg class="offer__icon-yes" width="31" height="21">
-                  <use xlink:href="#icon-yes"></use>
-                </svg>
-              </td>
-              <td class="offer__value">
-                <span>Розовый фильтр</span
-                ><svg class="offer__icon-yes" width="31" height="21">
-                  <use xlink:href="#icon-yes"></use>
-                </svg>
-              </td>
-              <td class="offer__value">
-                <span>Розовый фильтр</span
-                ><svg class="offer__icon-yes" width="31" height="21">
-                  <use xlink:href="#icon-yes"></use>
-                </svg>
-              </td>
-            </tr>
-            <tr>
-              <td class="offer__feature"><span>Смайлики</span></td>
-              <td class="offer__value">
-                <span>Смайлики</span
-                ><svg class="offer__icon-no" width="27" height="26">
-                  <use xlink:href="#icon-no"></use>
-                </svg>
-              </td>
-              <td class="offer__value">
-                <span>Смайлики</span
-                ><svg class="offer__icon-yes" width="31" height="21">
-                  <use xlink:href="#icon-yes"></use>
-                </svg>
-              </td>
-              <td class="offer__value">
-                <span>Смайлики</span
-                ><svg class="offer__icon-yes" width="31" height="21">
-                  <use xlink:href="#icon-yes"></use>
-                </svg>
-              </td>
-            </tr>
-            <tr>
-              <td class="offer__feature"><span>Комментарии</span></td>
-              <td class="offer__value">
-                <span>Комментарии</span
-                ><svg class="offer__icon-no" width="27" height="26">
-                  <use xlink:href="#icon-no"></use>
-                </svg>
-              </td>
-              <td class="offer__value">
-                <span>Комментарии</span
-                ><svg class="offer__icon-no" width="27" height="26">
-                  <use xlink:href="#icon-no"></use>
-                </svg>
-              </td>
-              <td class="offer__value">
-                <span>Комментарии</span
-                ><svg class="offer__icon-yes" width="31" height="21">
-                  <use xlink:href="#icon-yes"></use>
-                </svg>
-              </td>
-            </tr>
-          </table>
-        </div>
-      </section>
-      <section class="page-main__contacts contacts">
-        <div class="contacts__wrapper">
-          <h2 class="visually-hidden">Наши контакты</h2>
-          <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
-          <div class="contacts__content">
-            <div class="contacts__item contacts__item--tel">
-              <span>Звоните:</span>
-              <a href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
-            </div>
-            <div class="contacts__item contacts__item--mail">
-              <span>Пишите:</span>
-              <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </div>
-            <div class="contacts__item contacts__item--address">
-              <span>Приезжайте в гости:</span>
-              <a href="#">ул. Большая Конюшенная, 19/8</a>
+      <div class="page-main__form form-contest">
+        <p class="form-contest__welcome">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000
+          миль на вашу бонусную карту!
+          <span>Пожалуйста, заполните форму ниже:</span>
+        </p>
+        <form action="/" method="post" class="form-contest__form">
+          <div class="form-contest__item form-contest__item--name">
+            <div
+              class="form-contest__item-wrapper form-contest__item-wrapper--name"
+            >
+              <div
+                class="form-contest__wrapper-input form-contest__wrapper-input--name"
+              >
+                <label for="surname" class="form-contest__label"
+                  >Фамилия:</label
+                >
+                <input
+                  class="form-contest__input"
+                  type="text"
+                  name="surname"
+                  id="surname"
+                  placeholder="Укажите фамилию*"
+                />
+              </div>
+              <div
+                class="form-contest__wrapper-input form-contest__wrapper-input--name"
+              >
+                <label for="name" class="form-contest__label">Имя:</label>
+                <input
+                  class="form-contest__input"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Введите ваше имя*"
+                  required
+                />
+              </div>
+              <div
+                class="form-contest__wrapper-input form-contest__wrapper-input--patronymic"
+              >
+                <label for="patronymic" class="form-contest__label"
+                  >Отчество:</label
+                >
+                <input
+                  class="form-contest__input"
+                  type="text"
+                  name="patronymic"
+                  id="patronymic"
+                  placeholder="Ну и отчество тоже"
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <div class="contacts__map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716006118!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1589047544400!5m2!1sru!2sru"
-            aria-label="мы на карте"
-            class="contacts__iframe"
-          ></iframe>
-        </div>
-      </section>
+          <div class="form-contest__item form-contest__item--application">
+            <fieldset
+              class="form-contest__item-wrapper form-contest__item-wrapper--application"
+            >
+              <legend class="form-contest__legend">
+                С каким приложением путешествовали?
+              </legend>
+              <ul class="form-contest__list">
+                <li>
+                  <input
+                    class="form-contest__radio visually-hidden"
+                    type="radio"
+                    name="application"
+                    value="iOS"
+                    id="iOS"
+                    checked
+                  />
+                  <label for="iOS">Pink для iOS</label>
+                </li>
+                <li>
+                  <input
+                    class="form-contest__radio visually-hidden"
+                    type="radio"
+                    name="application"
+                    value="Android"
+                    id="Android"
+                  />
+                  <label for="Android">Pink на Android</label>
+                </li>
+                <li>
+                  <input
+                    class="form-contest__radio visually-hidden"
+                    type="radio"
+                    name="application"
+                    value="Windows"
+                    id="Windows"
+                  />
+                  <label for="Windows">Windows Phone</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="form-contest__item form-contest__item--contacts">
+            <fieldset
+              class="form-contest__item-wrapper form-contest__item-wrapper--contacts"
+            >
+              <legend
+                class="form-contest__legend form-contest__legend--contacts"
+              >
+                Контактная информация
+              </legend>
+              <div class="form-contest__content">
+                <div
+                  class="form-contest__wrapper-input form-contest__wrapper-input--contacts form-contest__wrapper-input--phone"
+                >
+                  <label for="phone" class="form-contest__label"
+                    >номер телефона</label
+                  >
+                  <input
+                    class="form-contest__input"
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="Номер, пожалуйста"
+                    pattern="\+?[0-9]{11}"
+                  />
+                </div>
+                <div
+                  class="form-contest__wrapper-input form-contest__wrapper-input--contacts form-contest__wrapper-input--email"
+                >
+                  <label for="email" class="form-contest__label"
+                    >Адрес почты</label
+                  >
+                  <input
+                    class="form-contest__input"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Введите почту *"
+                    required
+                  />
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div class="form-contest__item form-contest__item--progress">
+            <fieldset
+              class="form-contest__item-wrapper form-contest__item-wrapper--progress"
+            >
+              <legend class="form-contest__legend">
+                Ваши безбашенные достижения в путешествии
+              </legend>
+              <ul class="form-contest__list form-contest__list--progress">
+                <li>
+                  <input
+                    class="form-contest__checkbox visually-hidden"
+                    type="checkbox"
+                    name="shark-selfie"
+                    id="shark-selfie"
+                    checked
+                  />
+                  <label for="shark-selfie">Сделал селфи с акулой</label>
+                </li>
+                <li>
+                  <input
+                    class="form-contest__checkbox visually-hidden"
+                    type="checkbox"
+                    name="sunburned"
+                    id="sunburned"
+                    checked
+                  />
+                  <label for="sunburned">Обгорел на пляже</label>
+                </li>
+                <li>
+                  <input
+                    class="form-contest__checkbox visually-hidden"
+                    type="checkbox"
+                    name="saw-Chuck-Norris"
+                    id="saw-Chuck-Norris"
+                  />
+                  <label for="saw-Chuck-Norris">Видел Чака Норриса</label>
+                </li>
+                <li>
+                  <input
+                    class="form-contest__checkbox visually-hidden"
+                    type="checkbox"
+                    name="souvenirs"
+                    id="souvenirs"
+                  />
+                  <label for="souvenirs">Накупил сувениров</label>
+                </li>
+                <li>
+                  <input
+                    class="form-contest__checkbox visually-hidden"
+                    type="checkbox"
+                    name="held-tower"
+                    id="held-tower"
+                    checked
+                  />
+                  <label for="held-tower">Удержал башню</label>
+                </li>
+                <li>
+                  <input
+                    class="form-contest__checkbox form-contest__checkbox--defeated-hotel visually-hidden"
+                    type="checkbox"
+                    name="defeated-hotel"
+                    id="defeated-hotel"
+                    checked
+                  />
+                  <label for="defeated-hotel">Разгромил отель</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="form-contest__item form-contest__item--emotions">
+            <fieldset
+              class="form-contest__item-wrapper form-contest__item-wrapper--emotions"
+            >
+              <legend class="form-contest__legend">
+                Опишите свои эмоции
+              </legend>
+              <textarea
+                class="form-contest__textarea"
+                rows="6"
+                name="describe-emotions"
+                id="describe-emotions"
+                placeholder="Можно прям в красках, не стесняясь в выражениях"
+              ></textarea>
+            </fieldset>
+          </div>
+          <div class="form-contest__item form-contest__item--footnote">
+            <div
+              class="form-contest__item-wrapper form-contest__item-wrapper--footnote"
+            >
+              <button type="submit" class="form-contes__button button-form">
+                Отправить форму
+              </button>
+              <p class="form-contest__footnote">
+                <span>*</span> — обязательные <span>для заполнения</span> поля
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
     </main>
-    <footer class="page-footer page-footer--index">
+    <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo-wrapper">
+        <a
+          href="index.html"
+          aria-label="Пинк"
+          class="page-footer__logo-wrapper"
+        >
           <svg
             width="146.3px"
             height="40.4px"
@@ -483,6 +474,34 @@
         </a>
       </div>
     </footer>
+    <div class="modal modal--err">
+      <div class="modal__wrapper">
+        <h2 class="modal__title">Что-то пошло не так!</h2>
+        <p class="modal__text">
+          Проверьте поля, выделенные красным, скорее всего вы забыли их
+          заполнить
+        </p>
+      </div>
+      <div class="modal__overlay modal__overlay--err">
+        <button type="button" class="modal__button button-form">
+          ок
+        </button>
+      </div>
+    </div>
+    <div class="modal modal--sent">
+      <div class="modal__wrapper modal__wrapper--sent">
+        <h2 class="modal__title">Ваша заявка отправлена</h2>
+        <p class="modal__text modal__text--sent">
+          Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее
+          время мы рассмотрим ее и оповестим вас.
+        </p>
+      </div>
+      <div class="modal__overlay modal__overlay--sent">
+        <button type="button" class="modal__button button-form">
+          закрыть окно
+        </button>
+      </div>
+    </div>
     <script src="js/script-menu.js"></script>
   </body>
 </html>

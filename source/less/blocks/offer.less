@@ -42,7 +42,7 @@
 
   &:nth-of-type(3) {
     position: relative;
-    background: linear-gradient(135deg, @dark 8%, @pink 8%, @pink 19%, @dark 19%);
+    background-image: linear-gradient(135deg, #283645 8%, #d22856 8%, #d22856 19%, #283645 19%);
 
     &::before {
       content: "хит";
@@ -59,7 +59,7 @@
 .offer__title span {
   display: block;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 300;
   color: @ash-color;
 }
 
@@ -174,9 +174,18 @@
   }
 
   .offer__title {
-    padding: 14px 0 5px;
+    padding: 14px 0 7px;
 
     font-size: 16px;
+
+    &:nth-of-type(3) {
+      background-image: linear-gradient(135deg, #283645 8%, #d22856 8%, #d22856 26%, #283645 26%);
+
+      &::before {
+        top: 9px;
+        left: 7px;
+      }
+    }
   }
 
   .offer__title span {
@@ -220,7 +229,16 @@
 
   .offer__title {
     font-size: 18px;
-    padding: 17px 0 21px;
+    padding: 17px 0 22px;
+
+    &:nth-of-type(3) {
+      background-image: linear-gradient(135deg, #283645 10%, #d22856 10%, #d22856 22%, #283645 22%);
+
+      &::before {
+        top: 17px;
+        left: 11px;
+      }
+    }
   }
 
   .offer__title span {

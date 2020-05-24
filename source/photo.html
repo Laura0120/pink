@@ -88,10 +88,12 @@
       </div>
     </header>
     <main class="page-main">
-      <div class="page-main__wrapper page-main__wrapper--photo">
+      <div class="page-main__wrapper">
         <section class="page-main__intro intro">
-          <div class="intro__wrapper intro__wrapper--photo">
-            <h1 class="intro__title">Фотографии пользователей</h1>
+          <div class="intro__wrapper">
+            <h1 class="intro__title">
+              Фотографии пользователей
+            </h1>
           </div>
         </section>
       </div>
@@ -167,7 +169,11 @@
               </p>
             </blockquote>
             <div class="photo-item__like photo-item__like--panorama">
-              <button type="button" class="photo-item__button-like">
+              <button
+                type="button"
+                class="photo-item__button-like"
+                aria-label="мне нравится"
+              >
                 <svg class="photo-item__like-icon" width="13" height="12">
                   <use xlink:href="#icon-heart"></use>
                 </svg>
@@ -241,7 +247,11 @@
                 </p>
               </blockquote>
               <div class="photo-item__like">
-                <button type="button" class="photo-item__button-like">
+                <button
+                  type="button"
+                  class="photo-item__button-like"
+                  aria-label="мне нравится"
+                >
                   <svg class="photo-item__like-icon" width="13" height="12">
                     <use xlink:href="#icon-heart"></use>
                   </svg>
@@ -314,7 +324,11 @@
                 </p>
               </blockquote>
               <div class="photo-item__like">
-                <button type="button" class="photo-item__button-like">
+                <button
+                  type="button"
+                  class="photo-item__button-like"
+                  aria-label="мне нравится"
+                >
                   <svg class="photo-item__like-icon" width="13" height="12">
                     <use xlink:href="#icon-heart"></use>
                   </svg>
@@ -387,7 +401,11 @@
                 </p>
               </blockquote>
               <div class="photo-item__like">
-                <button type="button" class="photo-item__button-like">
+                <button
+                  type="button"
+                  class="photo-item__button-like"
+                  aria-label="мне нравится"
+                >
                   <svg class="photo-item__like-icon" width="13" height="12">
                     <use xlink:href="#icon-heart"></use>
                   </svg>
@@ -460,7 +478,11 @@
                 </p>
               </blockquote>
               <div class="photo-item__like">
-                <button type="button" class="photo-item__button-like">
+                <button
+                  type="button"
+                  class="photo-item__button-like"
+                  aria-label="мне нравится"
+                >
                   <svg class="photo-item__like-icon" width="13" height="12">
                     <use xlink:href="#icon-heart"></use>
                   </svg>
@@ -533,7 +555,11 @@
                 </p>
               </blockquote>
               <div class="photo-item__like">
-                <button type="button" class="photo-item__button-like">
+                <button
+                  type="button"
+                  class="photo-item__button-like"
+                  aria-label="мне нравится"
+                >
                   <svg class="photo-item__like-icon" width="13" height="12">
                     <use xlink:href="#icon-heart"></use>
                   </svg>
@@ -606,7 +632,11 @@
                 </p>
               </blockquote>
               <div class="photo-item__like">
-                <button type="button" class="photo-item__button-like">
+                <button
+                  type="button"
+                  class="photo-item__button-like"
+                  aria-label="мне нравится"
+                >
                   <svg class="photo-item__like-icon" width="13" height="12">
                     <use xlink:href="#icon-heart"></use>
                   </svg>
@@ -616,9 +646,14 @@
             </div>
           </li>
         </ul>
-        <p class="photo__welcome photo__welcome--bottom">
-          Затмите их всех! <br />Выкладывайте все, что накопилось в телефоне!
-        </p>
+        <div class="photo__welcome photo__welcome--bottom">
+          <p>
+            Затмите их всех!
+          </p>
+          <p>
+            Выкладывайте все, что накопилось в телефоне!
+          </p>
+        </div>
       </div>
       <div class="page-main__editor editor">
         <div class="editor__wrapper">

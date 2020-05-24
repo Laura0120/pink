@@ -18,11 +18,12 @@
 
 .contacts__title {
   display: block;
+
   width: @mobile-width;
   padding-top: 42px;
   margin: 0 auto 25px;
-  font-size: 24px;
-  line-height: 30px;
+
+  .font(24px, 30px, 300);
 }
 
 .contacts__content {
@@ -71,13 +72,11 @@
 }
 
 .contacts__item span {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 30px;
+  .font(18px, 30px, 700);
 }
 
 .contacts__item a {
-  .font(24px, 30px, 400, @pink);
+  .font(24px, 30px, 300, @pink);
   text-decoration: none;
 
   &:hover {
@@ -125,7 +124,7 @@
 
   .contacts__title {
     width: @tablet-width;
-    padding: 45px 31px 0;
+    padding: 45px 41px 0;
     font-size: 40px;
     line-height: 50px;
     margin-bottom: 35px;
