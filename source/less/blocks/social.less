@@ -39,8 +39,19 @@
   fill: @pink;
 }
 
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    padding: 3px 21px 0 0;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .social__item a {
     padding-top: 9px;
+  }
+
+  .social__list {
+    padding: 3px 0 0 13px;
   }
 }
