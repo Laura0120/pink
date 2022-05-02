@@ -2,12 +2,14 @@
   "name": "pink-19",
   "version": "17.0.0",
   "private": true,
-  "description": "Личный проект «Пинк» от HTML Academy",
+  "homepage": "https://Laura0120.github.io/1351731-pink-19",
+  "description": "pink",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
     "browser-sync": "2.26.x",
     "del": "^5.1.0",
+    "gh-pages": "^3.2.3",
     "gulp": "4.0.x",
     "gulp-csso": "^4.0.1",
     "gulp-htmlmin": "^5.0.1",
@@ -30,7 +32,9 @@
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "gulp start"
+    "start": "gulp start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     "last 2 versions",
